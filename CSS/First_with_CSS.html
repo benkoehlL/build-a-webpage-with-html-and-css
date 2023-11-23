@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first document</title>
+    <meta name="description" content="This is the first webpage for this series">
+    <meta name="autorship" content="Benjamin">
+    <meta name="keywords" content="HTML, New document, First HTML Page">
+    <style>
+        h1{
+            background-color: blue;
+            color: white;
+        }
+        
+        h2{
+            color: green;
+        }
+        
+        h3{
+            text-decoration: underline;
+        }
+        
+        .even_paragraph{
+            font-size: 1.25rem;
+        }
+        
+        .odd_paragraph{
+            font-size: 0.75rem;
+        }
+        
+        button{
+            width: 50%;
+            height:300px;
+            font-size: 10rem;
+            margin: 5rem 0rem 5rem 5rem;
+        }
+        
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+        
+        button:active{
+            background-color: green;
+            color: black;
+        }
+
+        form>input:focus{
+            background-color: yellow;
+            color: black;
+        }
+        ul>li:nth-child(2n-1){
+            background-color: red;
+            color: white;
+        }
+        ul>li:nth-child(even){
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>My first heading level</h1>
+    <h2>My second heading level</h2>
+    <h3>My third heading level</h3>
+    <h4>My fourth heading level</h4>
+    <h5>My fifth heading level</h5>
+    <h6>My last heading level</h6>
+    <p class="even_paragraph">My first paragraph</p>
+    <p class="odd_paragraph">My second paragraph</p>
+    <p>
+        <b>This is bold text</b> <i>and this is italic</i>, 
+        while <u>this is underlined text</u> and <s>this is strikethrough text</s>
+    </p>
+    <p class="even_paragraph">
+        4 is 2<sup>2</sup> and 2H<sub>2</sub>+O<sub>2</sub> reacts to 2H<sub>2</sub>O
+    </p>
+    <p class="odd_paragraph"> This <small>small text</small> and this is <mark>marked text</mark></p>
+    <p>This is <em>emphasised text</em> and this is <strong>strong text</strong></p>
+    <form action="" method="">
+        <label>text input</label><input name="text" type="text" placeholder="put text here"><br>
+        <br>
+        <label>email input</label><input name="email" type="email" placeholder="hans@gmail.com"><br>
+        <br>
+        <label>number input</label><input name="number" type="number" value="42" max="100" min="0"><br>
+        <br>
+        <label>password input</label><input name="password" type="password" placeholder="please enter a password" required><br>
+        <br>
+        <label>date input</label><input name="date" type="date"><br>
+        <br>
+        <label>time input</label><input name="time" type="time"><br>
+        <br>
+        <label>file input</label><input name="file" type="file"><br>
+        <br>
+        <label>hidden input</label><input name="hidden" type="hidden"><br>
+        <br>
+        <label>radio input </label><label>label<sub>1</sub></label><input name="radio1" type="radio"><br>
+        <label>radio input </label><label>label<sub>2</sub></label><input name="radio2" type="radio"><br>
+        <br>  
+        <label>checkbox input </label><label>check</label><input name="checkbox" type="checkbox"><br>
+        <br>
+        <label>dropdown menu </label><select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+        </select><br>
+        <br>
+        <label>submit button </label><input type="submit"><br>
+    </form><br>
+    <button>Click me</button>
+    <iframe src="https://saxonq.com/" width="50%" height="600px"></iframe><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oZ8NeQvOW6w?si=5KFJmsQpGfhcv0Lv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <img src="./profile_picture.svg" alt="profile picture"><br>
+    <video src="./SaxonQ_Background.mp4" width="30%" controls autoplay muted loop alt="A video"></video>
+    <div style="display: flex; flex-direction: row; ">
+        <div style="display: flex; flex-direction: column; margin-right: 12rem;">
+            <h1>Ordered List</h1>
+            <ol>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ol>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <h1>Unordered List</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ul>
+        </div>
+    </div><br>
+    <h1>Table</h1>
+    <table border="2" width="500rem" cellspacing="2px">
+        <thead>
+            <tr>
+                <th >country</th>
+                <th >main languages spoken</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">China</td>
+                <td align="center">Mandarin, Kantonese</td>
+            </tr>    
+            <tr>
+                <td align="center">Germany</td>
+                <td align="center">German</td>
+            </tr>    
+            <tr>
+                <td align="center">Brazil</td>
+                <td align="center">Portugese</td>
+            </tr>    
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="center">World</td>
+                <td align="center">English</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
